@@ -1,0 +1,205 @@
+body {
+    margin: 10px 50px;
+    color: darkblue;
+    font-style: italic;
+    background-color: ivory;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    text-align: center;
+  }
+  
+  button {
+    background: darkblue;
+    border: none;
+    padding: 10px 20px;
+    border-bottom: 3px solid #0000cc;
+    border-right: 3px solid #0000cc;
+    border-radius: 3px;
+    color: ivory;
+  }
+  
+  button:hover {
+    background: #6b9fff;
+    border-bottom: 3px solid #6b9fff;
+    border-right: 3px solid #6b9fff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  tr:nth-of-type(odd) {
+    background: #eee;
+  }
+  
+  th {
+    background: darkblue;
+    color: white;
+    font-weight: bold;
+  }
+  
+  td,
+  th {
+    padding: 6px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  .error {
+    background-color: #ffeb3b;
+    display: block;
+    font-size: 2em;
+    font-weight: bolder;
+    color: red;
+    padding: 1em;
+    border-radius: 1em;
+    margin-bottom: 1em;
+    border: 0.4em red solid;
+  }
+  
+  .column-layout {
+    margin: 3em;
+  }
+  
+  .column-layout > * {
+    margin: 2em;
+  }
+  
+  .form-page {
+    margin: 5em;
+  }
+  
+  .form-page h2 {
+    display: block;
+    padding: 0;
+    margin: 0 0 20px 0;
+    font-size: x-large;
+  }
+  
+  .form-page .form {
+    max-width: 400px;
+    margin: 50px auto;
+    border-radius: 1%;
+    padding: 20px;
+  }
+  
+  .form-page .form ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .form-page .form li {
+    display: block;
+    padding: 9px;
+    border: 1px solid #dddddd;
+    margin-bottom: 30px;
+    border-radius: 3px;
+  }
+  
+  .form-page .form li:last-child {
+    border: none;
+    margin-bottom: 0;
+  }
+  
+  .form-page .form li > label {
+    display: block;
+    float: left;
+    margin-top: -19px;
+    background: #ffffff;
+    height: 14px;
+    padding: 2px 5px;
+    font-size: 14px;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .form-page .form input[type="text"],
+  .form-page .form input[type="email"],
+  .form-page .form input[type="tel"] {
+    box-sizing: border-box;
+    width: 100%;
+    display: block;
+    outline: none;
+    border: none;
+    height: 25px;
+    line-height: 25px;
+    font-size: 16px;
+    padding: 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  
+  .form-page .form input[type="text"]:focus,
+  .form-page .form input[type="email"]:focus,
+  .form-page .form input[type="tel"]:focus {
+    background: #f0f0f0;
+  }
+  
+  @media only screen and (max-width: 760px),
+    (min-device-width: 768px) and (max-device-width: 1024px) {
+    .column-layout {
+      margin: 0;
+    }
+  
+    .column-layout > * {
+      margin: 0;
+    }
+  
+    /* Force table to not be like tables anymore */
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+      display: block;
+    }
+  
+    thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+  
+    tr {
+      border: 1px solid #ccc;
+      padding: 1em;
+    }
+  
+    td {
+      /* Behave  like a "row" */
+      border: none;
+      position: relative;
+      padding-left: 50%;
+    }
+  
+    td:before {
+      /* Now like a table header */
+      position: absolute;
+      /* Top/left values mimic padding */
+      top: 6px;
+      left: 6px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap;
+    }
+  
+    td:nth-of-type(1):before {
+      content: "Id";
+    }
+    td:nth-of-type(2):before {
+      content: "PrÃ©nom";
+    }
+    td:nth-of-type(3):before {
+      content: "Nom de famille";
+    }
+    td:nth-of-type(4):before {
+      content: "Email";
+    }
+    td:nth-of-type(5):before {
+      content: "TÃ©lÃ©phone";
+    }
+  }

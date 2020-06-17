@@ -1,0 +1,38 @@
+node server-rest-static.js
+
+http://localhost:3000/
+
+
+
+
+RESP API
+HTTP - DB
+GET - select (lecture)
+POST - insert (création)
+PUT - update (mise à jour)
+DELETE - delete (suppression)
+
+server
+.
+server
+--- db
+--- --- collections (tables)
+--- --- --- documents (records)
+
+
+*********************************
+
+CREATE TABLE users (
+[19:29]
+firstname varchar(32),
+[19:29]
+lastname varchar(32),
+[19:29]
+email varchar(128),
+[19:29]
+phone varchar(20)
+[19:30]
+id integer primary key
+[19:30]
+)
+
